@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import { myContext } from './Context';
 
 function Section1() {
 	return (
