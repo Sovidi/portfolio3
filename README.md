@@ -4,7 +4,7 @@
 
 ## 소개
 
-Vue.js 를 이용하여 만든 포트폴리오 소개 사이트입니다.
+기존 Vue.js 를 이용하여 만들었던 포트폴리오 사이트의 엔드포인트 문제가 있어 
 
 ## 개발기간
 
@@ -16,7 +16,7 @@ Vue.js 를 이용하여 만든 포트폴리오 소개 사이트입니다.
 ##
 ![](https://img.shields.io/badge/javascript-F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=ffffff)
 ![](https://img.shields.io/badge/html5-E34F26.svg?&style=for-the-badge&logo=html5&logoColor=ffffff)
-![](https://img.shields.io/badge/vue.js-4FC08D.svg?&style=for-the-badge&logo=vuedotjs&logoColor=ffffff)
+![](https://img.shields.io/badge/next.js-000000.svg?&style=for-the-badge&logo=nextdotjs&logoColor=ffffff)
 ![](https://img.shields.io/badge/sass-CC6699.svg?&style=for-the-badge&logo=sass&logoColor=ffffff)
 ![](https://img.shields.io/badge/express-000000.svg?&style=for-the-badge&logo=express&logoColor=ffffff)
 ![](https://img.shields.io/badge/mongodb-47A248.svg?&style=for-the-badge&logo=mongodb&logoColor=ffffff)
