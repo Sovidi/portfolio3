@@ -36,6 +36,7 @@ function Section3() {
         </div>
       </div>
       <div class="sec2">
+        <div className='works'>
         {
           workbox.map(item=>(
           <div className={`workbox ${item.id == workMouseOn ? "active" : ""}`} onMouseOver={()=>{srcEdit(item.src)}} onMouseEnter={()=>{workMouseAdd(item.id)}} onMouseLeave={()=>{workMouseAdd('')}}>
@@ -51,6 +52,7 @@ function Section3() {
           </div >
           ))
         }
+        </div>
     </div >
   </section >
   )
