@@ -37,16 +37,9 @@ export default function Home() {
     />
   );
 
-
   return (
     <main>
       <Fullpage id="fullpage"/>
     </main>
   )
-
-  // const root = createRoot(document.getElementById('root'));
-  // root.render(<App />);
-  // ReactDOM.render(<Fullpage />, document.getElementById('root'));
-
 }
-

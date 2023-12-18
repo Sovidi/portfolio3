@@ -1,5 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { myContext } from './Context';
+import ReactFullpage from '@fullpage/react-fullpage';
+
 
 function Section1() {
 	return (
