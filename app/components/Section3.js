@@ -13,7 +13,7 @@ function Section3() {
     {id: 5, name: "Movie Finder", desc: "MovieDB API 를 활용한 간단 무비 파인더", src: "./assets/moviefinder.png", skills: "#react, #scss, #html", href: "https://sovidi.github.io/movies/", githref:"https://github.com/Sovidi/movies" },
     {id: 6, name: "toGrocery (MySQL)", desc: "시장 농산물 물가현황 간편확인 및 위치기반 매칭 어플 (서버폐쇄)", src: "./assets/togrocery.png", skills: "#next.js, #scss, #html, #MySQL", href: "https://togrocery.vercel.app/", githref:"https://github.com/Sovidi/togrocery" },
     {id: 7, name: "toGrocery (MongoDB)", desc: "장보러가자의 서버코드를 MongoDB(NoSQL)로 바꾼 버전입니다.", src: "./assets/togrocery.png", skills: "#next.js, #scss, #html, #MongoDB", href: "https://to-grocery2.vercel.app/", githref:"https://github.com/Sovidi/toGrocery2" },
-    {id: 8, name: "petSalon (현재 개발중)", desc: "미용사 찾기 위치기반 서비스 어플", src: "./assets/petsalon.png", skills: "#react, #css, #html", href: "#", githref:"#" }
+    {id: 8, name: "petSalon (현재 개발중)", desc: "미용사 찾기 위치기반 서비스 어플", src: "./assets/petsalon.png", skills: "#react, #css, #html", href: "https://pet-salon.vercel.app/", githref:"https://github.com/Sovidi/petSalon" }
 ]
 
   const srcEdit = (src) => {
