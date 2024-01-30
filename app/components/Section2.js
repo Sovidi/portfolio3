@@ -83,7 +83,7 @@ function Section2() {
 						</div>
 					</div>
 
-					<div className="skillsbox box1">
+					<div className="skillsbox box2">
 						<p>back-End</p>
 						<div className="icons">
 							{
@@ -100,7 +100,7 @@ function Section2() {
 						</div>
 					</div>
 
-					<div className="skillsbox box1">
+					<div className="skillsbox box3">
 						<p>etc</p>
 						<div className="icons">
 							{

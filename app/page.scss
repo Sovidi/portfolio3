@@ -118,19 +118,16 @@
       }
   
       >.sec2 {
-      >.clickIcon{
-        opacity: 1;
-        transform: translateX(0%);
-      }
-        >.skillIntroduce{
-          >.skillsbox {
-            opacity: 1;
-            transform: translateX(0%);
-            &.box1 {}
-            &.box2 {}
-            &.box3 {}
-          }
+        >.clickIcon{
+          opacity: 1;
+          transform: translateX(0%);
         }
+          >.skillIntroduce{
+            >.skillsbox {
+              opacity: 1;
+              transform: translateX(0%);
+            }
+          }
       }
     }
   }
@@ -283,6 +280,7 @@
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
+                box-shadow: 3px 3px 5px black;
       
                 >.boxes {
                   width: 100%;
