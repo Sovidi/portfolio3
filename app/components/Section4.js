@@ -92,6 +92,55 @@ function Section4() {
     commentGet();
   }, [])
 
+  const kakaoShare = () => {
+		Kakao.Share.sendDefault({
+			objectType: 'feed',
+			content: {
+				title: "LCM Portfolio",
+				description: "프론트엔드 개발자 임채민의 포트폴리오",
+				imageUrl: 'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+				link: {
+					// [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
+					mobileWebUrl: window.location.href,
+					webUrl: window.location.href,
+				},
+			},
+			// social: {
+			// 	likeCount: Number(detailItem[0].like), // 스트링은
+			// 	commentCount: comment.length,
+			// },
+			buttons: [
+				{
+					title: '자세히 보기',
+					link: {
+						mobileWebUrl: window.location.href,
+						webUrl: window.location.href,
+					},
+				}
+			],
+		});
+	}
+
+  useEffect(() => {
+		const script = document.createElement("script");
+		script.src = "https://t1.kakaocdn.net/kakao_js_sdk/2.6.0/kakao.min.js";
+		script.async = true;
+		script.integrity = "sha384-6MFdIr0zOira1CHQkedUqJVql0YtcZA1P0nbPrQYJXVJZUkTk/oX4U9GhUIs3/z8";
+		script.crossOrigin = "anonymous";
+
+		document.body.appendChild(script);
+
+		script.onload = () => {
+			Kakao.init(process.env.NEXT_PUBLIC_KJSKEY); // 사용하려는 앱의 JavaScript 키 입력
+		};
+
+		return () => {
+			document.body.removeChild(script);
+		};
+	}, []);
+
+
+
 
 
   return (
@@ -100,6 +149,10 @@ function Section4() {
           <div className="title">
             <strong>CONTACT</strong>
             <div className="contactTextBox">
+              <a className="contactCell" onClick={kakaoShare}>
+                <figure><div style={{"background-image": `url(./assets/kakao.png)`}}></div></figure>
+                <span>공유하기</span>
+              </a>
               {
                 contact.map(item=>(
                   <a className="contactCell" href={item.address}>
