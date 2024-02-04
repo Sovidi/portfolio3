@@ -23,19 +23,29 @@ export async function POST(req) {
 export async function DELETE(req) {
     const qData = await Object.fromEntries(req.nextUrl.searchParams);
     const {client, collection} = await dbConnect("comment");
-    await collection.deleteOne({name: qData.name, email: qData.email});
-    const dataGet = await collection.find().toArray();
-
-    await client.close();
-    return Response.json(dataGet);
+    const dataGet = await collection.find({name: qData.name, email: qData.email}).toArray();
+    if(dataGet.length > 0) {
+        await collection.deleteOne({name: qData.name, email: qData.email});
+        
+        await client.close();
+        return Response.json("댓글이 삭제되었습니다.");    
+    } else {
+        await client.close();
+        return Response.json("이메일을 확인해주세요.");    
+    }
 }
 
 export async function PUT(req) {
     const qData = await req.json();
     const {client, collection} = await dbConnect("comment");
-    await collection.updateOne({name: qData.name, email: qData.email}, {$set:{text: qData.text}});
-    const dataGet = await collection.find().toArray();
-
-    await client.close();
-    return Response.json(dataGet);
+    const dataGet = await collection.find({name: qData.name, email: qData.email}).toArray();
+    if (dataGet.length > 0) {
+        await collection.updateOne({name: qData.name, email: qData.email}, {$set:{text: qData.text}});
+        
+        await client.close();
+        return Response.json(dataGet);
+    } else {
+        await client.close();
+        return Response.json("이메일을 확인해주세요.");    
+    }
 }

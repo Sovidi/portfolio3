@@ -1,5 +1,6 @@
 import axios from 'axios';
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
+import { myContext } from './Context';
 
 function Section4() {
   const [mode, setMode] = useState("list");
@@ -19,6 +20,14 @@ function Section4() {
     { id: 4, text: "https://velog.io/@qwert4572", address: "https://velog.io/@qwert4572", src: "./assets/velog.png" },
     { id: 5, text: "Instagram", address: "https://www.instagram.com/chaemmni/", src: "./assets/instagram.png" }
   ]
+
+  const alertBoard = (txt = '') => {
+    Swal.fire({
+      text: txt,
+      confirmButtonColor: '#FF8500',
+      confirmButtonText: '확인',
+    })
+  }//alertBoard() 함수정의  
 
   const commentGet = async () => {
     await axios.get(`/api/comment`)
@@ -65,9 +74,9 @@ function Section4() {
     console.log(objData)
 
     await axios.put(`/api/comment`, objData)
-    // .then(res=>{
-    //   this.comment = res.data;
-    // })
+    .then(res=>{
+      alertBoard(res.data);
+    })
     await commentGet();
     modName.current.value = "";
     modEmail.current.value = "";
@@ -78,9 +87,9 @@ function Section4() {
   const deleteComment = async (e) => {
     e.preventDefault();
     await axios.delete(`/api/comment?name=${modName.current.value}&email=${modEmail.current.value}`)
-    // .then(res=>{
-    //   this.comment = res.data;
-    // })
+    .then(res=>{
+      alertBoard(res.data);
+    })
     await commentGet();
     modName.current.value = "";
     modEmail.current.value = "";
@@ -127,7 +136,6 @@ function Section4() {
 		script.async = true;
 		script.integrity = "sha384-6MFdIr0zOira1CHQkedUqJVql0YtcZA1P0nbPrQYJXVJZUkTk/oX4U9GhUIs3/z8";
 		script.crossOrigin = "anonymous";
-
 		document.body.appendChild(script);
 
 		script.onload = () => {

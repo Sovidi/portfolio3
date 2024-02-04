@@ -34,6 +34,8 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
         <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
         <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+        {/* alert창 */}
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
       </head>
       <body>
         <Context>{children}</Context>
