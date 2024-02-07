@@ -41,9 +41,9 @@ export async function PUT(req) {
     const dataGet = await collection.find({name: qData.name, email: qData.email}).toArray();
     if (dataGet.length > 0) {
         await collection.updateOne({name: qData.name, email: qData.email}, {$set:{text: qData.text}});
-        
+
         await client.close();
-        return Response.json(dataGet);
+        return Response.json("댓글이 수정되었습니다.");
     } else {
         await client.close();
         return Response.json("이메일을 확인해주세요.");    
