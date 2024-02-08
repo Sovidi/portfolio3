@@ -11,10 +11,10 @@ function Section3() {
     {id: 3, name: "Everland", desc: "에버랜드 홈페이지 리뉴얼", src: "./assets/everland.png", skills: "#javascript, #scss, #html, #jQuery", href: "https://sovidi.github.io/everland/", githref:"https://github.com/Sovidi/everland" },
     {id: 4, name: "Scary House", desc: "귀신의 집, 공포 추리 미니 게임", src: "./assets/scaryhouse.png", skills: "#react, #scss, #html, #Express", href: "https://sovidi.github.io/scary/", githref:"https://github.com/Sovidi/scary" },
     {id: 5, name: "Movie Finder", desc: "MovieDB API 를 활용한 간단 무비 파인더", src: "./assets/moviefinder.png", skills: "#react, #scss, #html", href: "https://sovidi.github.io/movies/", githref:"https://github.com/Sovidi/movies" },
-    {id: 6, name: "BookFinder", desc: "NaverBook RestAPI 를 활용한 서적 검색기", src: ".", skills: "#react, #scss, #html", href: "https://book-finder-fawn-kappa.vercel.app/", githref:"https://github.com/Sovidi/BookFinder" },
+    {id: 6, name: "BookFinder(현재 개발중)", desc: "NaverBook RestAPI 를 활용한 서적 검색기", src: ".", skills: "#react, #scss, #html", href: "https://book-finder-fawn-kappa.vercel.app/", githref:"https://github.com/Sovidi/BookFinder" },
     {id: 7, name: "toGrocery (MySQL)", desc: "시장 농산물 물가현황 간편확인 및 위치기반 매칭 어플 (서버폐쇄)", src: "./assets/togrocery.png", skills: "#next.js, #scss, #html, #MySQL", href: "https://togrocery.vercel.app/", githref:"https://github.com/Sovidi/togrocery" },
     {id: 8, name: "toGrocery (MongoDB)", desc: "장보러가자의 서버코드를 MongoDB(NoSQL)로 바꾼 버전입니다.", src: "./assets/togrocery.png", skills: "#next.js, #scss, #html, #MongoDB", href: "https://to-grocery2.vercel.app/", githref:"https://github.com/Sovidi/toGrocery2" },
-    {id: 9, name: "petSalon (현재 개발중)", desc: "미용사 찾기 위치기반 서비스 어플", src: "./assets/petsalon.png", skills: "#react, #css, #html", href: "https://pet-salon.vercel.app/", githref:"https://github.com/Sovidi/petSalon" }
+    {id: 9, name: "petSalon", desc: "미용사 찾기 위치기반 서비스 어플", src: "./assets/petsalon.png", skills: "#react, #css, #html", href: "https://pet-salon.vercel.app/", githref:"https://github.com/Sovidi/petSalon" }
 ]
 
   const srcEdit = (src) => {
