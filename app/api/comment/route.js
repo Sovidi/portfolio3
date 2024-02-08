@@ -14,7 +14,6 @@ export async function POST(req) {
     const {client, collection} = await dbConnect("comment");
     await collection.insertOne(qData);
     const dataGet = await collection.find().toArray();
-    console.log(qData)
 
     await client.close();
     return Response.json(dataGet);
