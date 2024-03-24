@@ -1,3 +1,34 @@
+body{
+  .loadingPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .loadingPop{
+      font-size: 3rem;
+      transition: 3s;
+      animation-name: load;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+  }
+}
+
+@keyframes load{
+	0%{
+    transform: translateX(100px); 
+    color: black;
+  }
+	100%{
+    transform: translateX(0px);
+    color: #0433BF;
+  }
+}
+
 .section1 {
 	&.active {
 		>.fp-overflow {

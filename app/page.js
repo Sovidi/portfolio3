@@ -13,6 +13,22 @@ import Logo from './components/Logo';
 
 
 export default function Home() {
+  const [load, setLoad] = useState(true);
+
+  const firstLoading = () => {
+    setLoad(false);
+  };
+
+  useEffect(()=>{
+    setTimeout(() => {
+      firstLoading();
+    }, 800);
+
+    return () => {
+      clearTimeout(firstLoading);
+    };
+  });
+
   const Fullpage = () => (
     <ReactFullpage
       afterLoad={(origin, destination, direction) => {}}
@@ -37,9 +53,10 @@ export default function Home() {
     />
   );
 
-  return (
-    <main>
-      <Fullpage id="fullpage"/>
-    </main>
-  )
-}
+  return load ?
+  <div className='loadingPage'><span className={`loadingPop ${load ? "active" : "" }`}>로딩중</span></div>
+  :
+  <main>
+    <Fullpage id="fullpage"/>
+  </main>
+};
