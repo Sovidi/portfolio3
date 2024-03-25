@@ -76,12 +76,14 @@ function Section4() {
     await axios.put(`/api/comment`, objData)
     .then(res=>{
       alertBoard(res.data);
-    })
+      if(res.data == "댓글이 수정되었습니다.") {
+        modName.current.value = "";
+        modEmail.current.value = "";
+        modText.current.value = "";
+        setMode("list");
+      };
+    });
     await commentGet();
-    modName.current.value = "";
-    modEmail.current.value = "";
-    modText.current.value = "";
-    setMode("list");
   };
 
   const deleteComment = async (e) => {
@@ -89,12 +91,14 @@ function Section4() {
     await axios.delete(`/api/comment?name=${modName.current.value}&email=${modEmail.current.value}`)
     .then(res=>{
       alertBoard(res.data);
-    })
+      if (res.data == "댓글이 삭제되었습니다.") {
+        modName.current.value = "";
+        modEmail.current.value = "";
+        modText.current.value = "";
+        setMode("list");
+      };
+    });
     await commentGet();
-    modName.current.value = "";
-    modEmail.current.value = "";
-    modText.current.value = "";
-    setMode("list");
   };
 
   useEffect(()=>{

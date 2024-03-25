@@ -11,7 +11,6 @@ import Section4 from './components/Section4';
 import { myContext } from './components/Context';
 import Logo from './components/Logo';
 
-
 export default function Home() {
   const [load, setLoad] = useState(true);
 
