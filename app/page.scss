@@ -432,6 +432,12 @@ body{
         align-items: center;
         justify-content: center;
         >.workbox {
+          &:nth-last-of-type(3) {
+            text-decoration: line-through;
+          }
+          &:nth-last-of-type(10) {
+            text-decoration: line-through;
+          }
           &.active{
             background-color: gray;
           }
@@ -1050,5 +1056,5 @@ body{
   
   
   @media (max-width: 480px){
+
   }
-  
