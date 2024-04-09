@@ -40,7 +40,7 @@ function Section3() {
         <div className='works'>
         {
           workbox.map(item=>(
-          <div className={`workbox ${item.id == workMouseOn ? "active" : ""}`} onMouseOver={()=>{srcEdit(item.src)}} onMouseEnter={()=>{workMouseAdd(item.id)}} onMouseLeave={()=>{workMouseAdd("mOut")}}>
+          <div className={`workbox ${item.id == workMouseOn ? "active" : ""}`} onMouseOver={()=>{srcEdit(item.src)}} onMouseEnter={()=>{workMouseAdd(item.id)}}>
             <div className="text">
               <strong>{ item.name }</strong>
               <span>{ item.desc }</span>
