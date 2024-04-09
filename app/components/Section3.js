@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 function Section3() {
-  const [workSrc, setWorkSrc] = useState("");
-  const [workMouseOn, setWorkMouseOn] = useState("");
+  const [workSrc, setWorkSrc] = useState("./assets/portfolio.gif");
+  const [workMouseOn, setWorkMouseOn] = useState(1);
 
   const workbox = [
     {id: 0, name: "Portfolio (Vue.js) *서버폐쇄됨", desc: "Vue.js로 제작된 포트폴리오 페이지 입니다.", src: "./assets/portfolio.gif", skills: "#Vue.js, #scss, #html, #MongoDB, #Express", href: "https://port-0-portfolio2-6w1j2alm48bfok.sel5.cloudtype.app/", githref:"https://github.com/Sovidi/portfolio2" },
@@ -40,7 +40,7 @@ function Section3() {
         <div className='works'>
         {
           workbox.map(item=>(
-          <div className={`workbox ${item.id == workMouseOn ? "active" : ""}`} onMouseOver={()=>{srcEdit(item.src)}} onMouseEnter={()=>{workMouseAdd(item.id)}} onMouseLeave={()=>{workMouseAdd('')}}>
+          <div className={`workbox ${item.id == workMouseOn ? "active" : ""}`} onMouseOver={()=>{srcEdit(item.src)}} onMouseEnter={()=>{workMouseAdd(item.id)}} onMouseLeave={()=>{workMouseAdd("mOut")}}>
             <div className="text">
               <strong>{ item.name }</strong>
               <span>{ item.desc }</span>
