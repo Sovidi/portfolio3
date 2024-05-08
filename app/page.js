@@ -52,10 +52,11 @@ export default function Home() {
     />
   );
 
-  return load ?
-  <div className='loadingPage'><span className={`loadingPop ${load ? "active" : "" }`}>로딩중</span></div>
+  return (load ?
+    <div className='loadingPage'><span className={`loadingPop ${load ? "active" : "" }`}>로딩중</span></div>
   :
-  <main>
-    <Fullpage id="fullpage"/>
-  </main>
+    <main>
+      <Fullpage id="fullpage"/>
+    </main>
+  )
 };

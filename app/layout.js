@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/png" href="/icons/favicon-128.png" sizes="128x128" />
-        <meta name="application-name" content="&nbsp;"/>
+        <meta name="application-name" content="LCM Portfolio"/>
         <meta name="msapplication-TileColor" content="#FFFFFF" />
         <meta name="msapplication-TileImage" content="mstile-144x144.png" />
         <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
@@ -36,6 +36,9 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
         {/* alert창 */}
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+        {/* <script defer src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'></script> */}
       </head>
       <body>
         <Context>{children}</Context>
