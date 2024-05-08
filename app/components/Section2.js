@@ -63,7 +63,7 @@ function Section2() {
 			</div>
 			<div className="sec2">
 				<span className="scrolltext">JAVASCRIPT CSS REACT SCSS HTML JQUERY REACT TYPESCRIPT NEXT.JS VUE.JS MYSQL NPM MONGODB NOSQL NODE.JS</span>
-				<span className="clickIcon fa-bounce"><div></div></span>
+				<span className="clickIcon fa-shake"><div></div></span>
 				<div className="skillIntroduce">
 
 					<div className="skillsbox box1">
