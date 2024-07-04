@@ -24,7 +24,7 @@ export default function Home() {
       console.log("로딩 렌더링 정지");
       clearTimeout(firstLoading);
     };
-  });
+  }, []);
 
   const Fullpage = () => (
     <ReactFullpage
