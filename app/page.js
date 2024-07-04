@@ -14,16 +14,14 @@ import Logo from './components/Logo';
 export default function Home() {
   const [load, setLoad] = useState(true);
 
-  const firstLoading = () => {
-    setLoad(false);
-  };
-
   useEffect(()=>{
-    setTimeout(() => {
-      firstLoading();
+    const firstLoading = setTimeout(() => {
+      console.log("로딩 렌더링");
+      setLoad(false);
     }, 800);
 
     return () => {
+      console.log("로딩 렌더링 정지");
       clearTimeout(firstLoading);
     };
   });
