@@ -1,15 +1,14 @@
-import { Inter } from 'next/font/google'
-import './globals.scss'
-import Context from './components/Context'
+import { Inter } from "next/font/google";
+import "./globals.scss";
+import Context from "./components/Context";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'LCM Portfolio',
-  description: 'Welcome to my Portfolio',
-}
+  title: "LCM Portfolio",
+  description: "Welcome to my Portfolio",
+};
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <head>
@@ -27,7 +26,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/png" href="/icons/favicon-128.png" sizes="128x128" />
-        <meta name="application-name" content="LCM Portfolio"/>
+        <meta name="application-name" content="LCM Portfolio" />
         <meta name="msapplication-TileColor" content="#FFFFFF" />
         <meta name="msapplication-TileImage" content="mstile-144x144.png" />
         <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
@@ -42,5 +41,5 @@ export default function RootLayout({ children }) {
         <Context>{children}</Context>
       </body>
     </html>
-  )
+  );
 }
