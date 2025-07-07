@@ -49,11 +49,11 @@ function Section3() {
         </div>
       </div>
       <div ref={scrollContainerRef} class="sec2 h-full overflow-y-scroll">
-        <div className="flex flex-col justify-start items-center works h-full overflow-y-visible">
+        <div className="flex flex-col items-center justify-start h-full overflow-y-visible works">
           {workbox?.map((item, idx) => (
             <div
               ref={(el) => (boxsRef.current[idx] = el)}
-              className={`workbox !py-[100px] max-blp:!py-[20px] flex-shrink-0 ${item.id == workMouseOn ? "active" : ""}`}
+              className={`workbox !h-[200px] max-blp:!h-[80px] flex-shrink-0 ${item.id == workMouseOn ? "active" : ""}`}
               onMouseOver={() => {
                 srcEdit(item.src);
               }}
