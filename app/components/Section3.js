@@ -1,10 +1,12 @@
 import React, { useRef, useState } from "react";
+import useMatchMedia from "./useMatchMedia";
 
 function Section3() {
   const [workSrc, setWorkSrc] = useState("./assets/portfolio.gif");
   const [workMouseOn, setWorkMouseOn] = useState(1);
   const scrollContainerRef = useRef(null);
   const boxsRef = useRef([]);
+  const brp = useMatchMedia(`(max-width:1300px)`);
 
   const workbox = [
     { id: 0, expired: true, name: "Portfolio (Vue.js) *서버폐쇄", desc: "Vue.js로 제작된 포트폴리오 페이지 입니다.", src: "./assets/portfolio.gif", skills: "#Vue.js, #scss, #html, #MongoDB, #Express", href: "https://port-0-portfolio2-6w1j2alm48bfok.sel5.cloudtype.app/", githref: "https://github.com/Sovidi/portfolio2" },
@@ -56,7 +58,7 @@ function Section3() {
               onMouseEnter={(obj) => {
                 workMouseAdd(item.id);
                 scrollContainerRef?.current?.scrollTo({
-                  top: boxsRef?.current?.[idx]?.offsetTop - 200,
+                  top: boxsRef?.current?.[idx]?.offsetTop - `${brp ? 500 : 200}`,
                   behavior: "smooth",
                 });
               }}
