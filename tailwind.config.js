@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        blp: "1301px",
+        brp: "1301px",
       },
     },
   },
