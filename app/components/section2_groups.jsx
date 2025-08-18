@@ -2,9 +2,9 @@ import React from "react";
 
 const Section2_groups = ({ skillbox, className = "", tagId, idEdit, setSelectedItem = {} }) => {
   return (
-    <div className={`skillsbox ${skillbox?.group} ${className && className}`}>
+    <div className={`skillsbox my-[3%] ${skillbox?.[0]?.group} ${className && className}`}>
       <p>front-End</p>
-      <div className="icons">
+      <div className="icons gap-[8px]">
         {skillbox?.map((item) => (
           <>
             <figure
