@@ -319,9 +319,9 @@ body {
               }
 
               > .popup {
-                position: absolute;
-                transform: translate(1000px);
-                opacity: 0;
+                // position: absolute;
+                // transform: translate(1000px);
+                // opacity: 0;
                 transition: 0.5s;
                 min-width: 300px;
                 min-height: 150px;
@@ -356,8 +356,8 @@ body {
 
               &.active {
                 > .popup {
-                  opacity: 1;
-                  transform: translate(0px);
+                  // opacity: 1;
+                  // transform: translate(0px);
                 }
               }
             }
