@@ -22,6 +22,7 @@ function Section2() {
     { id: 4, group: "box1", src: "./assets/html.png", text: "도큐먼트 구조파악과 페이지의 마크업을 위한 기초적 구조를 효과적으로 구축합니다.", name: "HTML5", active: false },
     { id: 5, group: "box1", src: "./assets/jquery.png", text: "자바스크립트에 더해 다룰 줄 아는 가장 기초적인 라이브러리입니다. HTML 로 개발하였던 교육컨텐츠 개발기술로 주로 사용하였습니다.", name: "jQuery", active: false },
     { id: 6, group: "box1", src: "./assets/react.png", text: "저의 주력 프론트 프레임워크이며 자바스크립트에 대한 이해도와 더불어 컴포넌트 구조와 상황에 따른 분기점 활용에 관하여 자신 있습니다. 또한 SPA 페이징구조를 파악하고 있으며 실무를 포함한 여러 프로젝트를 수행하였습니다.", name: "React.js", active: false },
+    { id: 30, group: "box1", src: "./assets/reactnative.svg", text: "리액트를 다루던 기술을 기반으로 본래 진행했던 플랫폼 프로젝트의 사이드 프로젝트로 Expo 와 React-Native 를 통한 어플리케이션으로의 확장 경험이 있습니다. 기존 반응형으로 제작된 플랫폼의 WebView-Import 스타일부터, 리액트 네이티브 자체 퍼블리싱 및 개발을 통해 개발까지 진행할 수 있습니다.", name: "React-Native", active: false },
     { id: 7, group: "box1", src: "./assets/typescript.png", text: "소규모 프로젝트에선 회의적이나 대규모 프로젝트에서 안정성 구비를 위해 사용합니다.", name: "TypeScript", active: false },
     { id: 8, group: "box1", src: "./assets/next.png", text: "React.js에 대한 이해도와 더불어 서버명령과 엔드포인트 구축을 다루는데에 특히 이해도가 높습니다.", name: "Next.js", active: false },
     { id: 9, group: "box1", src: "./assets/vue.png", text: "기본적인 컨텍스트(store) 이해와 더불어 vue의 각종 독립 훅을 이해하고 능동적으로 다룰 수 있습니다.", name: "Vue.js", active: false },
@@ -48,7 +49,7 @@ function Section2() {
     { id: 24, group: "box3", src: "./assets/netlify.png", text: "vue 프로젝트 빌드와 업로드를 위해 사용중입니다.", name: "Netlify", active: false },
     { id: 25, group: "box3", src: "./assets/notion.png", text: "각종 중요한 코드 메모와 팀 프로젝트 상황공유를 위해 사용하고 있으며 마크다운 명령어를 주로 다룰 수 있어요.", name: "Notion", active: false },
     { id: 26, group: "box3", src: "./assets/finale.png", text: "각종 음악악보 사보 및 작곡, 가상악기로 음원제작을 할 수 있어요.", name: "Make Music Finale", active: false },
-    { id: 27, group: "box3", src: "./assets/german.png", text: "독일에서의 유학생활중 학업과 현업으로 독일어 회화가 가능합니다.", name: "Deutsch", active: false },
+    { id: 27, group: "box3", src: "./assets/german.png", text: "독일에서의 유학생활중 학업과 현업으로 독일어 회화가 가능합니다.", name: "Deutsch Sprach", active: false },
   ];
 
   return (
@@ -59,7 +60,7 @@ function Section2() {
             <figcaption>ABOUT</figcaption>
             <img src="../assets/about.png" />
           </figure>
-          <span>저의 개발 경험은 광범위하며, 웹 애플리케이션부터 모바일 앱, 데스크톱 애플리케이션, 그리고 중요한 데이터베이스와 서버 시스템까지 여러 영역에서 다양한 프로젝트를 성공적으로 수행해 왔습니다. 또한 소프트웨어 개발 방법론과 도구를 최신으로 유지하고, 개발 프로세스를 개선하기 위해 지속적인 학습과 실험을 통해 발전하고 있습니다.</span>
+          <span>다수의 개발 경험으로 말미암아 광범위하게 접근 및 해결책을 제시하는 개발자가 되고자 합니다. 프론트엔드 영역에서 손에 주어진 프로젝트를 성공적으로 수행해 왔으며, 개발업무와 R&D를 항상 병행합니다. 웹 애플리케이션부터 모바일 앱, 데스크톱 애플리케이션, 그리고 나아가 백엔드 데이터베이스와 서버, 보안 시스템까지 여러 영역에서 다양한 또한 소프트웨어 개발 트렌드와 도구를 최신으로 유지하고, 개발 프로세스를 개선하기 위해 지속적인 학습과 실험은 아직 멈추지 않았습니다.</span>
         </div>
       </div>
       <div className="overflow-hidden sec2">

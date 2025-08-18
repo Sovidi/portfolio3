@@ -21,15 +21,17 @@ function Section1() {
             <img src="./assets/textpoint.png" />
           </figure>
           <span className="firsttext">
-            <b>데이터 통신,</b>
+            <b>프론트엔드</b> 개발, UI/UX,
             <br />
             사용자 경험 <b>최적화,</b>
             <br />
-            <b>보안, 백엔드 브릿지</b>
+            <b>백엔드</b>개발 및 협업
             <br />
-            서비스,
+            <b>컨텐츠</b> 및 <b>플랫폼</b>
+            <br />
+            <b>어플</b>리케이션
           </span>
-          <span className="secondtext">그리고 각종 프레임워크 심화와 서버분야에 이르기까지 다양한 측면에서 소프트웨어를 개발하고 향상시키는 데 기여하고 있습니다.</span>
+          <span className="secondtext">프론트엔드 영역으로 시작하여, UI/UX 개발자를 지나 현재는 어플리케이션과 백엔드까지 모든것을 소화하고자 합니다. 완벽한 웹 개발을 지향하고 항상 발전하기 위해 궁금증을 꺼뜨리지 않고 개발중에 있습니다.</span>
         </div>
       </div>
     </section>
