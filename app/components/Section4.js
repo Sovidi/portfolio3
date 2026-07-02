@@ -201,7 +201,7 @@ function Section4() {
           onSubmit={e => {
             insertComment(e);
           }}
-          className={`comment basis-[40%]`}
+          className={`comment ${mobile ? `` : `basis-[40%]`} `}
         >
           <strong>Comments 😎</strong>
           <input ref={cmName} required placeholder='이름' type='text' name='name' className='namewrite' />
@@ -210,7 +210,7 @@ function Section4() {
           <button className='writebutton'>댓글 달기</button>
           {/* <button type="button" @click="modechange('modify')" class="writebutton">댓글 수정</button> */}
         </form>
-        <ul className={`${mobile ? `` : `overflow-y-scroll`} commentwriting flex basis-[60%] flex-col gap-[40px] !py-[40px]`}>
+        <ul className={`${mobile ? `` : `basis-[60%] overflow-y-scroll`} commentwriting flex flex-col gap-[40px] !py-[40px]`}>
           <span>댓글들</span>
           {comments.map(item => (
             <li className='commentcell !my-[0px]'>

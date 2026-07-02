@@ -68,14 +68,14 @@ function Section3() {
                 <span className={`${item.expired ? 'line-through' : ''}`}>{parse(item.desc)}</span>
                 <p className={`${item.expired ? 'line-through' : ''}`}>{item.skills}</p>
               </div>
-              <div className='links flex-col gap-[10px]'>
+              <div className={`links flex-col ${brp ? `gap-[4px]` : `gap-[10px]`} `}>
                 {item?.githref && (
-                  <a href={item.githref} className='gitlink' target='_blank'>
+                  <a href={item.githref} className={`gitlink ${brp ? `!aspect-[1] !w-[20px]` : ``}`} target='_blank'>
                     <div className='gitlogoicon'></div>
                   </a>
                 )}
                 {item?.href?.map((hrefItem, hrefKey) => (
-                  <a href={hrefItem} className='mainlink' target='_blank'>
+                  <a href={hrefItem} className={`mainlink ${brp ? `!aspect-[1] !w-[20px]` : ``}`} target='_blank'>
                     <div className='mainlogoicon'></div>
                   </a>
                 ))}
