@@ -1,19 +1,22 @@
-import React, { useEffect } from "react";
+// 모듈
+import React, { useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+// 컴포넌트
+import useMatchMedia from './useMatchMedia';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import useMatchMedia from "./useMatchMedia";
+// 스와이퍼 모듈
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 export const Section3_slide = ({ data = [] }) => {
   const mobile = useMatchMedia(`(max-width:1300px)`);
 
   useEffect(() => {
-    console.log(data);
+    console.log(typeof data);
   }, [data]);
 
   return (
@@ -30,8 +33,8 @@ export const Section3_slide = ({ data = [] }) => {
       // pagination={{ clickable: true }}
       spaceBetween={0}
       slidesPerView={1}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={swiper => console.log(swiper)}
       breakpoints={{
         640: {
           // slidesPerView: 1,

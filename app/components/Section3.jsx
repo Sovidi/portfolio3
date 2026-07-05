@@ -1,8 +1,10 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import useMatchMedia from './useMatchMedia';
-import { workbox } from '../datas/works';
 import parse from 'html-react-parser';
 import { Section3_slide } from './section3_slide';
+
+// 데이터
+import { workbox } from '../datas/works';
 
 function Section3() {
   const [workMouseOn, setWorkMouseOn] = useState(1);
@@ -44,6 +46,7 @@ function Section3() {
           ) : (
             <div class={`mt-[5%] h-full w-full`}>
               <Section3_slide data={filteredItem?.[0]?.src} />
+              {/* <span>{filteredItem?.[0]?.name}</span> */}
             </div>
           )}
         </div>
