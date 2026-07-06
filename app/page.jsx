@@ -10,6 +10,7 @@ import Section3 from './components/Section3';
 import Section4 from './components/Section4';
 import { myContext } from './components/Context';
 import Logo from './components/Logo';
+import LcmBackground from './components/LcmBackground';
 
 export default function Home() {
   const [load, setLoad] = useState(true);
@@ -32,7 +33,13 @@ export default function Home() {
 
   const Fullpage = () => (
     <ReactFullpage
-      afterLoad={(origin, destination, direction) => {}}
+      afterLoad={(origin, destination, direction) => {
+        window.dispatchEvent(
+          new CustomEvent('lcmFullpageMove', {
+            detail: { index: destination.index },
+          }),
+        );
+      }}
       scrollingSpeed={800}
       scrollHorizontally={true}
       skip-init={true}
@@ -60,7 +67,10 @@ export default function Home() {
     </div>
   ) : (
     <main>
-      <Fullpage id='fullpage' />
+      <LcmBackground />
+      <div id='fullpageLayer'>
+        <Fullpage />
+      </div>
     </main>
   );
 }

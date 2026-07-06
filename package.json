@@ -19,7 +19,8 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.69.5",
-    "swiper": "^14.0.1"
+    "swiper": "^14.0.1",
+    "three": "^0.185.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",

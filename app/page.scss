@@ -1,4 +1,29 @@
 body {
+  main {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  .lcmBackground {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 1;
+
+    > canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #fullpageLayer {
+    position: relative;
+    z-index: 2;
+  }
+
   .loadingPage {
     width: 100vw;
     height: 100vh;
