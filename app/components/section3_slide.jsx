@@ -1,5 +1,5 @@
 // 모듈
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
@@ -14,9 +14,11 @@ import 'swiper/css/scrollbar';
 
 export const Section3_slide = ({ data = [] }) => {
   const mobile = useMatchMedia(`(max-width:1300px)`);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
     console.log(typeof data);
+    swiperRef.current?.slideTo(0);
   }, [data]);
 
   return (
@@ -34,7 +36,9 @@ export const Section3_slide = ({ data = [] }) => {
       spaceBetween={0}
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
-      onSwiper={swiper => console.log(swiper)}
+      onSwiper={swiper => {
+        swiperRef.current = swiper;
+      }}
       breakpoints={{
         640: {
           // slidesPerView: 1,
