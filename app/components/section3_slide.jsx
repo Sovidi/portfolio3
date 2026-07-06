@@ -55,7 +55,7 @@ export const Section3_slide = ({ data = [] }) => {
           style={{
             backgroundImage: ` ${mobile ? `url(${obj})` : `url(${obj})`} `,
           }}
-          className={`lg:pt-200 flex aspect-[16/9] !h-[400px] !w-full flex-col items-center justify-start !bg-cover bg-center bg-no-repeat max-lg:h-[calc(100%-36px)] max-lg:justify-end`}
+          className={`lg:pt-200 flex aspect-[16/9] !h-[400px] !w-full flex-col items-center justify-start !bg-contain bg-center bg-no-repeat max-lg:h-[calc(100%-36px)] max-lg:justify-end`}
           key={key}
         >
           {/* <div className={`w-full max-w-1560 px-16 max-lg:mb-40 max-lg:pl-24`}>
