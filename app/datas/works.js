@@ -145,7 +145,7 @@ export const workbox = [
     desc: '2024년 후반부 미래엔과 계약한 e-book 개발 컨텐츠중 고등 중국어 컨텐츠 개발을 맡았습니다. 컨텐츠중 선긋기 게임 모듈 스크립트, 롤플레잉중 텍스트 하이라이트, 특수문자 자동 교환 등의 핵심스크립트 개발하였습니다. 일전 개발콘텐츠의 CSS 관리에 난항이 있어 플랫폼에 사용하고있는 Tailwind CSS를 적용하여 개발하였습니다.',
     src: './assets/miraen_high_china_title.png',
     skills: '#javascript, #css, #html, #jquery',
-    href: [`https://www.onflou.com/@pj/miraen_contents_list/high_china/index.html`,'https://miraen-contents-exported.vercel.app/high/china/contents/lesson02/ops/2/2_01_04.html', 'https://miraen-contents-exported.vercel.app/high/china/contents/lesson06/ops/6/6_01_08.html', 'https://miraen-contents-exported.vercel.app/high/china/contents/lesson07/ops/7/7_01_18.html'],
+    href: [`https://www.onflou.com/@pj/miraen_contents_list/high_china/index.html`, 'https://miraen-contents-exported.vercel.app/high/china/contents/lesson02/ops/2/2_01_04.html', 'https://miraen-contents-exported.vercel.app/high/china/contents/lesson06/ops/6/6_01_08.html', 'https://miraen-contents-exported.vercel.app/high/china/contents/lesson07/ops/7/7_01_18.html'],
     githref: 'https://github.com/Dalguiee/miraen_contents_exported',
   },
   {
@@ -171,11 +171,11 @@ export const workbox = [
   {
     id: 17,
     expired: false,
-    name: '미래엔 SmartPPT 다운로드형 컨텐츠',
-    desc: '웅진북클럽 플랫폼 과목중 초등과학 컨텐츠 서술형과학의 문항 개발 맡았습니다. 개별 html파일 개발형식이며 모듈형으로 제작되어 문항정보는 공통부 json 데이터로 저장하고 문항 갯수별로 html 산출하도록 구축하였습니다. 웅진측 브릿지 연결 통하여 String 저장할 수 있어 정답내용을 String 으로 파싱하여 웅진측 서버에 저장하고 불러오는 방식으로 정답저장 기능 구현되어 있습니다.',
-    src: ['./assets/wj_sc_desc/screenshot_1.png', './assets/wj_sc_desc/screenshot_2.png', './assets/wj_sc_desc/screenshot_3.png', './assets/wj_sc_desc/screenshot_4.png', './assets/wj_sc_desc/screenshot_5.png'],
+    name: '미래엔 SmartPPT 컨텐츠 다운로드형 및 S3형',
+    desc: '미래엔과 계약된 SmartPPT 교육 컨텐츠의 경우 미래엔 SmartPPT 웹사이트의 서비스를 통한 제공되고 있으나, 오프라인환경 대응 요청을 받아 협력사와 함께 .exe 파일로 제작된 뷰어와 제공하게 되었습니다. 토브소프트사 로부터 exe뷰어를 제공받았으며 개발된 웹 소스를 해당 뷰어와 브릿지하는 작업 맡았습니다. 해당 뷰어는 교과서 pdf파일과 개발된 컨텐츠가 동기화되어 작동하는 구조로 되어있으며 교육자료 멀티미디어 파일 다운로드를 위한 자료실구현, 기존 업데이트기능의 이슈 해결, pdf 교과서 버튼기능을 위한 스크립트 등을 맡았습니다. 추가로 해당 뷰어의 UI를 그대로 다시 웹형태로도 구현하길 원하는 고객사 요청에 따라 내부 소스 추출 통하여 뷰어 내부에서 작동하던 navigation 을 웹 url 이동형태로 수정한 S3스타일 변환작업 맡아 진행하였습니다.',
+    src: ['./assets/smartppt_download/screenshot_1.png', './assets/smartppt_download/screenshot_1.png', './assets/smartppt_download/screenshot_1.png', './assets/smartppt_download/screenshot_1.png'],
     skills: '#javascript, #tailwind, #jquery',
-    // href: ['https://cgn-intergration-exported.vercel.app/'],
+    href: ['https://download.m-teacher.co.kr/high/chi/core/resource/include/main/index.html', `https://download.m-teacher.co.kr/high/jpn/culture/resource/include/main/index.html`, `https://download.m-teacher.co.kr/high/phy/culture/resource/include/main/index.html`],
     // githref: 'https://github.com/Dalguiee/cgn_intergration_exported',
   },
   {
