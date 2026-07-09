@@ -173,7 +173,7 @@ export const workbox = [
     expired: false,
     name: '미래엔 SmartPPT 컨텐츠 다운로드형 및 S3형',
     desc: '미래엔과 계약된 SmartPPT 교육 컨텐츠의 경우 미래엔 SmartPPT 웹사이트의 서비스를 통한 제공되고 있으나, 오프라인환경 대응 요청을 받아 협력사와 함께 .exe 파일로 제작된 뷰어와 제공하게 되었습니다. 토브소프트사 로부터 exe뷰어를 제공받았으며 개발된 웹 소스를 해당 뷰어와 브릿지하는 작업 맡았습니다. 해당 뷰어는 교과서 pdf파일과 개발된 컨텐츠가 동기화되어 작동하는 구조로 되어있으며 교육자료 멀티미디어 파일 다운로드를 위한 자료실구현, 기존 업데이트기능의 이슈 해결, pdf 교과서 버튼기능을 위한 스크립트 등을 맡았습니다. 추가로 해당 뷰어의 UI를 그대로 다시 웹형태로도 구현하길 원하는 고객사 요청에 따라 내부 소스 추출 통하여 뷰어 내부에서 작동하던 navigation 을 웹 url 이동형태로 수정한 S3스타일 변환작업 맡아 진행하였습니다.',
-    src: ['./assets/smartppt_download/screenshot_1.png', './assets/smartppt_download/screenshot_1.png', './assets/smartppt_download/screenshot_1.png', './assets/smartppt_download/screenshot_1.png'],
+    src: ['./assets/smartppt_download/screenshot_1.png', './assets/smartppt_download/screenshot_2.png', './assets/smartppt_download/screenshot_3.png', './assets/smartppt_download/screenshot_4.png', './assets/smartppt_download/screenshot_5.png', './assets/smartppt_download/screenshot_6.png', './assets/smartppt_download/screenshot_7.png'],
     skills: '#javascript, #tailwind, #jquery',
     href: ['https://download.m-teacher.co.kr/high/chi/core/resource/include/main/index.html', `https://download.m-teacher.co.kr/high/jpn/culture/resource/include/main/index.html`, `https://download.m-teacher.co.kr/high/phy/culture/resource/include/main/index.html`],
     // githref: 'https://github.com/Dalguiee/cgn_intergration_exported',
