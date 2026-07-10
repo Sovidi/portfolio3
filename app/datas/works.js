@@ -4,7 +4,7 @@ export const workbox = [
     expired: true,
     name: 'Portfolio (Vue.js) *서버폐쇄',
     desc: 'Vue.js로 제작된 포트폴리오 페이지 입니다.',
-    src: ['./assets/portfolio.gif', './assets/cgn_intergration.png'],
+    src: './assets/portfolio.gif',
     skills: '#Vue.js, #scss, #html, #MongoDB, #Express',
     href: ['https://port-0-portfolio2-6w1j2alm48bfok.sel5.cloudtype.app/'],
     githref: 'https://github.com/Sovidi/portfolio2',
