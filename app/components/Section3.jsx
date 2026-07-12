@@ -34,14 +34,14 @@ function Section3() {
   };
 
   return (
-    <section className='section section3 h-screen'>
+    <section className='section section3 relative h-screen'>
       <div className='sec1'>
         <div className='title flex h-fit w-full flex-col items-center'>
           <strong>Works</strong>
           {srcIsString() ? (
             <figure>
               {/* <!-- <img src={workSrc}/> --> */}
-              <div className={`aspect-[16/9] !bg-cover bg-no-repeat`} style={{ 'background-image': `url(${filteredItem?.[0]?.src})` }}></div>
+              <div className={`aspect-[16/9] !bg-cover bg-no-repeat !transition-none`} style={{ 'background-image': `url(${filteredItem?.[0]?.src})` }}></div>
             </figure>
           ) : (
             <div class={`mt-[5%] h-full w-full`}>
@@ -86,6 +86,11 @@ function Section3() {
             </div>
           ))}
         </div>
+      </div>
+      <div class={`absolute right-[5%] top-[0px] flex h-full w-[30px] flex-col items-center justify-center gap-[10px]`}>
+        {workbox?.map((item, idx) => {
+          return <div class={`${workMouseOn === item?.id ? `h-[10px] w-[10px]` : `h-[4px] w-[4px]`} bg-[white] transition-all duration-[0.3s]`}></div>;
+        })}
       </div>
     </section>
   );

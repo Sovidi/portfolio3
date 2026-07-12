@@ -110,7 +110,7 @@ export const workbox = [
     githref: 'https://github.com/Dalguiee/wj_revision_math_exported',
   },
   {
-    id: 15,
+    id: 11,
     expired: false,
     name: '2024 TVing Festa 이벤트 페이지',
     desc: '2024년 하반기 이벤트 프로젝트입니다. 백그라운드는 긴 이미지를 통으로 활용하였고 내부 UI를 따로 개발하여 속도에 중점을 두면서 어색하게 보이지 않도록 제작되었습니다.',
@@ -120,7 +120,7 @@ export const workbox = [
     githref: 'https://github.com/Dalguiee/tving_festa2024_exported',
   },
   {
-    id: 11,
+    id: 12,
     expired: false,
     name: '스마트올 중학',
     desc: '2024년 8월부터 웅진 스마트올중학 웹사이트 운영, 관리중에 있습니다. 프론트단은 Java를 통한 JSP로 개발되어 있고 기존에 여러 개발자가 작업했던 프로젝트 코드가 많잇 스택되어 있습니다. 제가 합류하여 추가수정 및 신규 페이지들은 기존 CSS 시스템을 사용하지 않고 Tailwind CSS로 사용하였고 Node.js 모듈 통하여 Prettier 포맷터 추가하여 정리되지 않은 코드 정리 등을 통해 유지보수 난이도록 좁히도록 개선하였습니다.',
@@ -129,7 +129,7 @@ export const workbox = [
     href: ['https://smartallmid.wjthinkbig.com/'],
   },
   {
-    id: 12,
+    id: 13,
     expired: false,
     name: '프리스비',
     desc: '2024년 8월부터 애플 서드파티 브랜드인 프리스비의 프론트 운영, 관리중에 있습니다. Java를 통한 JSP로 제작되어 있으며 대표적으로 버거메뉴 내부 프리스비 카테고리를 본래 터치시 해당 사이트로 bind만 하던 방식에서 하단 버거형식으로 세부항목들 나타나도록 교체하였습니다.',
@@ -137,9 +137,9 @@ export const workbox = [
     skills: '#javascript, #css, #html, #jquery',
     href: ['https://www.frisbeekorea.com/shop/main/main.do'],
   },
-  // { id: 11, name: "웅진 개정수학(선긋기 게임 컨텐츠)", desc: "게임 시스템 핵심코드 리펙토링 담당하였습니다.", src: "./assets/petsalon.png", skills: "#javascript, #css, #html, #jquery", href: "https://sovidi.github.io/exported_wj_revision_math/%EC%96%91%EC%82%B02/1/2-1-4/INDEX1.HTML", githref: "https://github.com/Sovidi/exported_wj_revision_math" },
+  // { id: 14, name: "웅진 개정수학(선긋기 게임 컨텐츠)", desc: "게임 시스템 핵심코드 리펙토링 담당하였습니다.", src: "./assets/petsalon.png", skills: "#javascript, #css, #html, #jquery", href: "https://sovidi.github.io/exported_wj_revision_math/%EC%96%91%EC%82%B02/1/2-1-4/INDEX1.HTML", githref: "https://github.com/Sovidi/exported_wj_revision_math" },
   {
-    id: 13,
+    id: 15,
     expired: false,
     name: '미래엔 고등 중국어 전자교과서 e-book 컨텐츠',
     desc: '2024년 후반부 미래엔과 계약한 e-book 개발 컨텐츠중 고등 중국어 컨텐츠 개발을 맡았습니다. 컨텐츠중 선긋기 게임 모듈 스크립트, 롤플레잉중 텍스트 하이라이트, 특수문자 자동 교환 등의 핵심스크립트 개발하였습니다. 일전 개발콘텐츠의 CSS 관리에 난항이 있어 플랫폼에 사용하고있는 Tailwind CSS를 적용하여 개발하였습니다.',
@@ -149,7 +149,7 @@ export const workbox = [
     githref: 'https://github.com/Dalguiee/miraen_contents_exported',
   },
   {
-    id: 14,
+    id: 16,
     expired: false,
     name: 'CGN 통합페이지',
     desc: '온누리교회와의 계약으로 CGN 통합페이지 리뉴얼 작업하였고 현재 운영관리중에 있습니다. React.js + Vite 로 제작되었으며<br />클라이언트단은 애니메이션을 위한 framer-motion, Swiper.js, 상태관리를 위한 Zustand 라이브러리 등이 사용되었습니다.<br />각종 기능 및 버튼부는 모두 컴포넌트 모듈화로 공통적으로 사용할 수 있도록 디렉토리 및 구조 신경쓰며 제작하였습니다. 협업사의 요청으로 컴포넌트이 파일명은 대문자 시작하지 않으며 컴포넌트의 함수명 및 선언부에서만 대문자 유지하도록 설계되었습니다. 백엔드는 협업사와 진행하였습니다.',
@@ -159,7 +159,7 @@ export const workbox = [
     githref: 'https://github.com/Dalguiee/cgn_intergration_exported',
   },
   {
-    id: 16,
+    id: 17,
     expired: false,
     name: '웅진 서술형 과학 컨텐츠개발',
     desc: '웅진북클럽 플랫폼 과목중 초등과학 컨텐츠 서술형과학의 문항 개발 맡았습니다. 개별 html파일 개발형식이며 모듈형으로 제작되어 문항정보는 공통부 json 데이터로 저장하고 문항 갯수별로 html 산출하도록 구축하였습니다. 웅진측 브릿지 연결 통하여 String 저장할 수 있어 정답내용을 String 으로 파싱하여 웅진측 서버에 저장하고 불러오는 방식으로 정답저장 기능 구현되어 있습니다.',
@@ -169,7 +169,7 @@ export const workbox = [
     githref: 'https://github.com/Dalguiee/wj_description_exported',
   },
   {
-    id: 17,
+    id: 18,
     expired: false,
     name: '미래엔 SmartPPT 컨텐츠 다운로드형 및 S3형',
     desc: '미래엔과 계약된 SmartPPT 교육 컨텐츠의 경우 미래엔 SmartPPT 웹사이트의 서비스를 통한 제공되고 있으나, 오프라인환경 대응 요청을 받아 협력사와 함께 .exe 파일로 제작된 뷰어와 제공하게 되었습니다. 토브소프트사 로부터 exe뷰어를 제공받았으며 개발된 웹 소스를 해당 뷰어와 브릿지하는 작업 맡았습니다. 해당 뷰어는 교과서 pdf파일과 개발된 컨텐츠가 동기화되어 작동하는 구조로 되어있으며 교육자료 멀티미디어 파일 다운로드를 위한 자료실구현, 기존 업데이트기능의 이슈 해결, pdf 교과서 버튼기능을 위한 스크립트 등을 맡았습니다. 추가로 해당 뷰어의 UI를 그대로 다시 웹형태로도 구현하길 원하는 고객사 요청에 따라 내부 소스 추출 통하여 뷰어 내부에서 작동하던 navigation 을 웹 url 이동형태로 수정한 S3스타일 변환작업 맡아 진행하였습니다.',
@@ -179,7 +179,7 @@ export const workbox = [
     // githref: 'https://github.com/Dalguiee/cgn_intergration_exported',
   },
   {
-    id: 18,
+    id: 19,
     expired: false,
     name: '미래엔 초코 달달영어',
     desc: '미래엔 초코 과목플랫폼중 영어과목 맡아 이미 개발중에 투입되어 진행하였습니다. 플랫폼의 패드화면 대응, 튜토리얼 및 과목시작 서브페이지, 서브페이지중 달영노트 및 영단어사전 개발 및 api 브릿지 환경 맡았습니다. 다른 서브페이지는 백엔드와 연결되어 있으나 영단어사전은 미래엔에서 제공한 영어사전 api와 직접 클라이언트에서 연결됩니다. 연결부는 기본적으로 axios를 사용하나 react-query와 매핑한 컴포넌트를 사용합니다. 제가 제작하는게 아닌 공통 훅과 컴포넌트가 선임자에 의해 이미 작성된 상태였으므로 구조를 파악하는데 시간을 많이 들였으며 기존구조를 깨트리지 않는데 집중하였습니다.',
@@ -189,7 +189,7 @@ export const workbox = [
     // githref: 'https://github.com/Dalguiee/cgn_intergration_exported',
   },
   {
-    id: 19,
+    id: 20,
     expired: false,
     name: '서강대학교 SLP Edu Platform',
     desc: '서강대학교 SLP 통합페이지와 교육플랫폼인 Edu SLP 관련하여 오래된 프로젝트를 리뉴얼 프로젝트입니다. 본래 JSP로 구성된 클라이언트단은 React.js + Vite로 리뉴얼 하였으며, 백엔드 시스템도 PHP로 작성된 서버코드를 백엔드 팀에서 Java로 리워크하였습니다. 클라이언트 서브페이지중 포트폴리오 맡아 교육 리스팅, 작성페이지 퍼블리싱 및 연결, api 연결 대비하여 컴포넌트로 구축 작업 하였습니다.',
@@ -199,7 +199,7 @@ export const workbox = [
     // githref: 'https://github.com/Dalguiee/cgn_intergration_exported',
   },
   {
-    id: 20,
+    id: 21,
     expired: false,
     name: '서강대학교 SLP Edu Platform Application',
     desc: '리뉴얼한 SLP Edu 웹페이지를 React-Native의 WebView 기능 사용하여 어플리케이션으로 제공하고자 하여 프로젝트 맡게 되었습니다. 소스가 웹이다 보니 Capacitor로도 구현될 가능성 있었으나 온라인서비스 특성상 오프라인 기능 불필요하여 Expo를 통하여 WebView 앱으로 결정되었습니다. WebView의 Script Injection 기능 통하여 페이지별로 구분시켜 네이티브 기능 구현할 수 있었고, 본래 리액트로 구축되어 웹앱으로써 앱으로 패키징하는데 큰 하자 없었습니다. 외부페이지로 이동할 경우에만 어플리케이션 외부로 연결되도록 분기처리 되어있습니다. 페이지별 분기로 구현된 기능중엔, 교육 팝업 페이지의 경우 본래 Blank로 처리되어 있으나 url을 이동하도록 Monkey Patch 구현하였습니다. 또한 교육컨텐츠중 마이크접근 및 녹음기능 필요하여 Native 권한으로 접근시켰으며 카메라 및 알림권한 위한 접근컴포넌트 및 설정화면 위한 Stack 별도처리 등 작업하였습니다.',

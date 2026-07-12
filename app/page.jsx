@@ -37,7 +37,7 @@ export default function Home() {
         window.dispatchEvent(
           new CustomEvent('lcmFullpageMove', {
             detail: { index: destination.index },
-          }),
+          })
         );
       }}
       scrollingSpeed={800}
