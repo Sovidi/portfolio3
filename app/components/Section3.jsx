@@ -68,8 +68,8 @@ function Section3() {
             >
               <div className='text'>
                 <strong className={`${item.expired ? 'line-through' : ''}`}>{item.name}</strong>
-                <span className={`${item.expired ? 'line-through' : ''}`}>{parse(item.desc)}</span>
-                <p className={`${item.expired ? 'line-through' : ''}`}>{item.skills}</p>
+                <span className={`${item.expired ? 'line-through' : ''} leading-[1.2]`}>{parse(item.desc)}</span>
+                <p className={`${item.expired ? 'line-through' : ''} mt-[8px]`}>{item.skills}</p>
               </div>
               <div className={`links flex-col ${brp ? `gap-[4px]` : `gap-[10px]`} `}>
                 {item?.githref && (
