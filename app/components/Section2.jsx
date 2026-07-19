@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Section2_groups from './section2_groups';
-import Section2_card_detail from './section2_card_detail';
-import { skillbox1, skillbox2, skillbox3 } from '../datas/skills';
+
+// 컴포넌트
+import Section2_groups from '@/components/section2_groups.jsx';
+import Section2_card_detail from '@/components/section2_card_detail.jsx';
+import { skillbox1, skillbox2, skillbox3 } from '@/datas/skills.js';
 
 function Section2() {
   const [tagId, setTagId] = useState();

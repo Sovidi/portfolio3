@@ -1,7 +1,9 @@
-import axios from 'axios';
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import { myContext } from './Context';
-import useMatchMedia from './useMatchMedia';
+import axios from 'axios';
+
+// 컴포넌트
+import { myContext } from '@/components/Context.jsx';
+import useMatchMedia from '@/components/useMatchMedia.jsx';
 
 function Section4() {
   const [mode, setMode] = useState('list');

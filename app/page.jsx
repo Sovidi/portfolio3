@@ -1,16 +1,18 @@
 'use client';
-import './page.scss';
+import '@/page.scss';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
-import Section1 from './components/Section1';
-import Section2 from './components/Section2';
-import Section3 from './components/Section3';
-import Section4 from './components/Section4';
-import { myContext } from './components/Context';
-import Logo from './components/Logo';
-import LcmBackground from './components/LcmBackground';
+
+// 컴포넌트
+import { myContext } from '@/components/Context';
+import Section1 from '@/components/Section1';
+import Section2 from '@/components/Section2';
+import Section3 from '@/components/Section3';
+import Section4 from '@/components/Section4';
+import Logo from '@/components/Logo';
+import LcmBackground from '@/components/LcmBackground';
 
 export default function Home() {
   const [load, setLoad] = useState(true);

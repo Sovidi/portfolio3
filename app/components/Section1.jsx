@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from 'react';
-import { myContext } from './Context';
 import ReactFullpage from '@fullpage/react-fullpage';
+
+// 컴포넌트
+import { myContext } from '@/components/Context.jsx';
 
 function Section1() {
   return (

@@ -1,10 +1,15 @@
+// 모듈
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import useMatchMedia from './useMatchMedia';
 import parse from 'html-react-parser';
-import { Section3_slide } from './section3_slide';
+
+// 훅
+import useMatchMedia from '@/components/useMatchMedia.jsx';
+
+// 컴포넌트
+import { Section3_slide } from '@/components/section3_slide.jsx';
 
 // 데이터
-import { workbox } from '../datas/works';
+import { workbox } from '@/datas/works';
 
 function Section3() {
   const [workMouseOn, setWorkMouseOn] = useState(1);

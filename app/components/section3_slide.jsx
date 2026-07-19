@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 // 컴포넌트
-import useMatchMedia from './useMatchMedia';
+import useMatchMedia from '@/components/useMatchMedia.jsx';
 
 // 스와이퍼 모듈
 import 'swiper/css';
