@@ -17,6 +17,12 @@ function Section3() {
   const boxsRef = useRef([]);
   const brp = useMatchMedia(`(max-width:1300px)`);
 
+  const reversedWorks = useMemo(() => {
+    return workbox?.sort((a, b) => {
+      return b?.id - a?.id;
+    });
+  }, []);
+
   const filteredItem = useMemo(() => workbox?.filter(item => item.id == workMouseOn), [workMouseOn]);
 
   const srcIsString = () => {
@@ -58,7 +64,7 @@ function Section3() {
       </div>
       <div ref={scrollContainerRef} class={`sec2 !justify-start overflow-y-scroll`}>
         <div className='works my-[10px]'>
-          {workbox?.map((item, idx) => (
+          {reversedWorks?.map((item, idx) => (
             <div
               ref={el => (boxsRef.current[idx] = el)}
               className={`workbox !h-[350px] flex-shrink-0 max-brp:!h-[150px] max-brp:!w-[90%] ${item.id == filteredItem?.[0]?.id ? 'active' : ''}`}
