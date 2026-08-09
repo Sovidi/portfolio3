@@ -210,7 +210,7 @@ function Section4() {
           <input ref={cmEmail} required placeholder='e-mail' type='email' name='email' className='emailwrite' />
           <textarea ref={cmText} required placeholder='text of yours' name='text' className='textwrite'></textarea>
           <button className='writebutton'>댓글 달기</button>
-          {/* <button type="button" @click="modechange('modify')" class="writebutton">댓글 수정</button> */}
+          {/* <button type="button" @click="modechange('modify')" className="writebutton">댓글 수정</button> */}
         </form>
         <ul className={`${mobile ? `` : `basis-[60%] overflow-y-scroll`} commentwriting flex flex-col gap-[40px] !py-[40px]`}>
           <span>댓글들</span>
@@ -222,7 +222,7 @@ function Section4() {
                 <b>{item.time}</b>
               </div>
               <div className='texts'>
-                <p class={`line-clamp-1`}>{item.text}</p>
+                <p className={`line-clamp-1`}>{item.text}</p>
                 <button
                   onClick={() => {
                     setMode('modify');
@@ -248,7 +248,7 @@ function Section4() {
           <input ref={modName} value={commentName} required placeholder='작성한 댓글의 이름을 적어주세요' type='text' name='name' className='namewrite modname' />
           <input ref={modEmail} required placeholder='작성한 댓글의 e-mail을 적어주세요' type='email' name='email' className='emailwrite' />
           <textarea ref={modText} required placeholder='수정할 댓글 내용을 적어주세요' name='text' className='textwrite'></textarea>
-          <button class='writebutton'>수정하기</button>
+          <button className='writebutton'>수정하기</button>
           <button type='button' className='writebutton delete' onClick={deleteComment}>
             삭제하기
           </button>

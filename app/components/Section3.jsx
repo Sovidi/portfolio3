@@ -55,14 +55,14 @@ function Section3() {
               <div className={`aspect-[16/9] !bg-cover bg-no-repeat !transition-none`} style={{ 'background-image': `url(${filteredItem?.[0]?.src})` }}></div>
             </figure>
           ) : (
-            <div class={`mt-[5%] h-full w-full`}>
+            <div className={`mt-[5%] h-full w-full`}>
               <Section3_slide data={filteredItem?.[0]?.src} />
               {/* <span>{filteredItem?.[0]?.name}</span> */}
             </div>
           )}
         </div>
       </div>
-      <div ref={scrollContainerRef} class={`sec2 !justify-start overflow-y-scroll`}>
+      <div ref={scrollContainerRef} className={`sec2 !justify-start overflow-y-scroll`}>
         <div className='works my-[10px]'>
           {reversedWorks?.map((item, idx) => (
             <div
@@ -98,11 +98,13 @@ function Section3() {
           ))}
         </div>
       </div>
-      <div class={`absolute right-[5%] top-[0px] flex h-full w-[30px] flex-col items-center justify-center gap-[10px]`}>
-        {workbox?.map((item, idx) => {
-          return <div class={`${workMouseOn === item?.id ? `h-[10px] w-[10px]` : `h-[4px] w-[4px]`} bg-[white] transition-all duration-[0.3s]`}></div>;
-        })}
-      </div>
+      {!brp && (
+        <div className={`absolute right-[5%] top-[0px] flex h-full w-[30px] flex-col items-center justify-center gap-[10px]`}>
+          {workbox?.map((item, idx) => {
+            return <div className={`${workMouseOn === item?.id ? `h-[10px] w-[10px]` : `h-[4px] w-[4px]`} bg-[white] transition-all duration-[0.3s]`}></div>;
+          })}
+        </div>
+      )}
     </section>
   );
 }
