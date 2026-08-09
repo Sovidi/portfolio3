@@ -1,6 +1,6 @@
 'use client';
 import '@/page.scss';
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';

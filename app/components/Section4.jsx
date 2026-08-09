@@ -187,12 +187,12 @@ function Section4() {
               </figure>
               <span>공유하기</span>
             </a>
-            {contact.map(item => (
-              <a className='contactCell' href={item.address}>
+            {contact?.map(item => (
+              <a key={`contact list` + item?.id} className='contactCell' href={item?.address}>
                 <figure>
-                  <div style={{ 'background-image': `url(${item.src})` }}></div>
+                  <div style={{ 'background-image': `url(${item?.src})` }}></div>
                 </figure>
-                <span>{item.text}</span>
+                <span>{item?.text}</span>
               </a>
             ))}
           </div>
