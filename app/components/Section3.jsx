@@ -23,8 +23,11 @@ function Section3() {
     });
   }, []);
 
-  const filteredItem = useMemo(() => workbox?.filter(item => item.id == workMouseOn), [workMouseOn]);
+  const filteredItem = useMemo(() => {
+    return workbox?.filter(item => item.id == workMouseOn);
+  }, [workMouseOn]);
 
+  // 이미지 경로가 string 일때
   const srcIsString = () => {
     if (typeof filteredItem?.[0]?.src === 'string') {
       return true;
@@ -98,6 +101,7 @@ function Section3() {
           ))}
         </div>
       </div>
+      {/* 네비게이터 */}
       {!brp && (
         <div className={`absolute right-[5%] top-[0px] flex h-full w-[30px] flex-col items-center justify-center gap-[10px]`}>
           {workbox?.map((item, idx) => {
